@@ -56,10 +56,7 @@ body{
     
  }
  nav#menu a:hover{
-    background-color: #bc5ac5d3;
-    color: var(--texto-inverso);
-    font-weight: 600;
-    border-radius: 50px;
+    color: rgb(185, 16, 163);
  }
 
  header h2{
@@ -67,7 +64,7 @@ body{
     font-size: 1.1em;
  }
 
- span#destaque{
+ span.destaque{
     background-image: linear-gradient(45deg, #eb4698, #813cc5);
     background-clip: text;
     color: transparent;
@@ -104,6 +101,7 @@ body{
 
  section{
     grid-column: 2;
+    
     }
 
  section#ficha{
@@ -111,6 +109,14 @@ body{
     padding: 20px;
     border-radius: 8px;
     grid-column: 2;
+    box-shadow: inset 0px 0px 15px rgba(245, 244, 244, 0.123);
+ }
+
+ #nome{
+    background-image: linear-gradient(45deg, rgb(245, 77, 133) , #b83084, #8b50c7);
+    background-clip: text;
+    color: transparent;
+    
  }
  
  section#ficha img.foto {
@@ -121,16 +127,41 @@ body{
     border-radius: 50%;
     background-position: top top;
     border: 4px solid transparent;
-    outline: 5px solid var(--destaque);;
+    outline: 3px solid var(--destaque);;
     display: block;
     margin: 10px auto 25px auto;
+    
  }
 
  section#ficha h1 {
     padding: 10px 0px 15px 0px;
-    color: var(--destaque);;
+    margin-right: 5px;
+    color: var(--texto);
     font-family: "Rubik", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    display: inline-block;
+ }
+
+ #ficha h2{
+    font-size: 1.0em;
+    margin: 0px 0px 10px 0px;
+    color: #f5f5f52f;
+    text-align: end;
+    display: inline-block;
+ }
+
+ #ficha h3{
+    font-size: 1em;
+    color: #bd5286;
+    border: 1px solid rgba(216, 112, 147, 0.096);
+    box-shadow: inset 0px 0px 5px palevioletred;
+    border-radius: 20px;
+    padding: 7px 14px;
+    display: inline-block;
+ }
+
+ span.rosa{
+    color: rgb(179, 31, 110);
  }
 
  section#ficha p {
@@ -167,6 +198,7 @@ body{
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    box-shadow: inset 0px 0px 15px rgba(245, 244, 244, 0.123);
      }
 
      article h2{
@@ -256,7 +288,7 @@ body{
      }
 
      p.periodo{
-      color: #f5f5f591;
+      color: #f5f5f556;
      }
 
     .projetos{
