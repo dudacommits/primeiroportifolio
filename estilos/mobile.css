@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 *{
     margin: 0px;
     box-sizing: border-box;
@@ -101,7 +102,6 @@ body{
 
  section{
     grid-column: 2;
-    
     }
 
  section#ficha{
@@ -110,6 +110,7 @@ body{
     border-radius: 8px;
     grid-column: 2;
     box-shadow: inset 0px 0px 15px rgba(245, 244, 244, 0.123);
+    
  }
 
  #nome{
@@ -135,7 +136,6 @@ body{
 
  section#ficha h1 {
     padding: 10px 0px 15px 0px;
-    margin-right: 5px;
     color: var(--texto);
     font-family: "Rubik", sans-serif;
     font-size: 1.7em;
@@ -214,18 +214,21 @@ body{
      #skills{
        display: grid;
        grid-template-columns:  1fr 1fr 1fr ;
-       grid-template-rows: 60px 70px auto;
+       grid-template-rows: 60px 70px auto auto;
+       grid-auto-rows: 20px;
        place-items: center center;
      }
 
      #skills h2 , #skills span{
        grid-column: 1/ -1;
-       font-family: "Caveat Brush", cursive;
+       font-family: "Luckiest Guy", cursive;
+      
      }
 
      #skills h2 {
-       font-size: 2em;
-       letter-spacing: 1px;
+      
+       font-size: 1.8em;
+       letter-spacing: 3px;
      }
 
      #skills img{
@@ -239,7 +242,7 @@ body{
      }
 
      img#html:hover{
-       box-shadow: 0px 0px 8px #e94504;
+       box-shadow: 0px 0px 10px #e94504;
      }
 
      #skills img#css{
@@ -249,7 +252,7 @@ body{
      }
 
      img#css:hover{
-       box-shadow: 0px 0px 8px #3089ee;
+       box-shadow: 0px 0px 10px #3089ee;
        
      }
 
@@ -260,12 +263,47 @@ body{
      }
 
      img#js:hover{
-       box-shadow: 0px 0px 8px #e68d3a;
+       box-shadow: 0px 0px 10px #e68d3a;
+
      }
 
      #skills p{
       padding: 8px 0px 0px 0px;
        color: var(--texto);
+     }
+
+     .barra{
+      margin-top: 8px;
+      margin-bottom: 8px;
+      width: 70%;
+      height: 5px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      
+     }
+
+
+     .progresso{
+      height: 100%;
+      background-color: #ff4500;
+      border-radius: 15px;
+      
+     }
+
+     .progresso#html{
+      box-shadow: 0px 0px 8px #ff440079;
+
+     }
+
+     .progresso#css{
+      height: 100%;
+      box-shadow: 0px 0px 8px #115a9f94;
+      background-color: #115b9f;
+     }
+
+     .progresso#js{
+      box-shadow: 0px 0px 8px #f57f17;
+      background-color: #f57f17;
      }
 
      div.cursos{
@@ -310,6 +348,7 @@ body{
 
      .projetos img{
       width: 74vw;
+      max-width: 750px;
       border-radius: 8px;
       transition: width 0.5s, box-shadow 0.6s;
      }
@@ -335,3 +374,4 @@ body{
       margin-left: 2px;
      }
 
+     
