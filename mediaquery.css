@@ -7,7 +7,7 @@
  nav#menu a{
     
     font-size: 1.2em;
-    padding: 10px 9px;
+    padding: 9px 9px;
     
  }
 
@@ -79,14 +79,16 @@
  }
 
     .projetos{
+      max-width: 1600px;
+      margin: auto;
+      margin-top: 40px;
+      padding: 40px 0px 40px 15px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 20px 50px 100px auto auto;
+      justify-items: center;
      }
       
-     
-
-
      .projetos img{
       grid-column: 2 / 3;
       grid-row: 1 / -1 ;
@@ -101,21 +103,19 @@
 
      .projetos a {
       place-self: center;
-      width: 30%;
+      width: 45%;
       text-align: center;
       grid-column: 1 / 2;
       grid-row: -2 / -1;
       
      }
 
-     #projetos a:hover{
-      width: 32%;
-      
- }
+     
       p.g{
       display: block;
       grid-column: 1 / 2;
       grid-row: 3 / -2;
+      place-items: center center;
      }
 
      p.pq{
@@ -127,6 +127,34 @@
 
    
 }
+
+ .projetos#alternado img{
+      grid-column: 1 / 2;
+      grid-row: 1 / -1 ;
+     }
+
+ .projetos#alternado h3{
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+     }
+
+     
+
+ .projetos#alternado a {
+      place-self: center;
+      text-align: center;
+      grid-column: 2 / 3;
+      grid-row: -2 / -1;
+      
+     }
+
+ .projetos#alternado p.g{
+      display: block;
+      grid-column: 2 / 3;
+      grid-row: 3 / -2;
+      padding-right: 15px;
+     }
+
 
 #skills{
     padding: 75px 0px;

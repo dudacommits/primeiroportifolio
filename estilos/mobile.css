@@ -357,8 +357,8 @@ body{
       padding: 10px;
       border-radius: 8px;
      }
-
-     P.g{
+   
+     p.g{
       display: none;
      }
 
@@ -379,8 +379,6 @@ body{
       width: 78vw;
      }
 
-     
-
      .projetos p{
       color: var(--texto);
      }
@@ -399,19 +397,23 @@ body{
       text-decoration: none;
       color: white;
       background-image: linear-gradient(45deg, #eb4698, #813cc5);
-      padding: 6px 12px;
+      padding: 10px 20px;
       font-family: "Rubik", sans-serif;
       font-size: 1em;
       font-weight: 600;
-      border-radius: 20px;
+      border-radius: 25px;
       transition: font-size 0.6s;
       
      }
 
      #projetos a:hover{
       font-size: 1.1em;
-      padding: 7px 14px;
       box-shadow: 0px 0px 5px rgba(223, 175, 235, 0.664);
       border: 2px solid #ffffff8e;
       margin: -2px;
+ }
+
+ summary:hover{
+    cursor: pointer;
+    color: #d15aa3;
  }
