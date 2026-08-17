@@ -155,27 +155,35 @@
       padding-right: 15px;
      }
 
+     #skills{
+       display: grid;
+       grid-template-columns:  1fr 1fr 1fr ;
+       grid-template-rows: 80px 70px auto auto;
+       grid-auto-rows: 20px;
+       place-items: center center;
+     }
 
-#skills{
-    padding: 75px 0px;
+
+      #skills{
+      padding: 30px 0px;
 }
 
-#formacao{
-   padding: 50px 30px 60px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px auto;
-    grid-auto-rows: auto;
-    gap: 20px;
-}
+      #formacao{
+      padding: 50px 30px 60px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 30px auto;
+      grid-auto-rows: auto;
+      gap: 20px;
+   }
 
-#formacao h2{
-    grid-column: 1 / -1;
-    place-items: center center;
-}
+   #formacao h2{
+      grid-column: 1 / -1;
+      place-items: center center;
+   }
 
-#formacao> div.cursos{
-    
+   #formacao> div.cursos{
+      
 }
 }
     
