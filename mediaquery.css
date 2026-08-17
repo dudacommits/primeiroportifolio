@@ -88,7 +88,14 @@
  }
 
  #work{
-   margin-right: 30px;
+   padding: 8px 15px;
+   margin-right: 25px;
+}
+
+ #location{
+   padding: 8px 15px;
+   margin-right: 25px;
+   
 }
 
 

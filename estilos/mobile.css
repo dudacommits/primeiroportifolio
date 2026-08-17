@@ -213,11 +213,12 @@ body{
  }
 
  #info{
+   display: none;
    padding-top: 30px;
    padding-bottom: 15px;
-    display: flex;
+   
     justify-content: center;
-    gap: 5px;
+    gap: 4px;
  }
 
 #work, #location{
