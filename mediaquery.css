@@ -78,6 +78,21 @@
     place-self: end center;
  }
 
+
+
+ #info{
+   text-align: center;
+   display: block;
+   grid-column: 2 / 4;
+   grid-row: 5 / 6;
+ }
+
+ #work{
+   margin-right: 30px;
+}
+
+
+
     .projetos{
       max-width: 1600px;
       margin: auto;
