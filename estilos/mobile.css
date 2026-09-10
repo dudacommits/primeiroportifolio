@@ -43,12 +43,12 @@ body{
  header{
     position: sticky;
     top: 0;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(32, 32, 32);
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 12px;
+    padding: 7px 12px;
  }
 
  nav#menu ul{
@@ -71,13 +71,13 @@ body{
     color: white;
     font-size: 0.9em;
     font-weight: 600;
-    padding: 5px 9px;
+    padding: 5px 5px;
     transition: translate 0.4s;
     
  }
  nav#menu a:hover{
-   font-size: 1.1em;
-   padding: 5px 7px;
+   font-size: 1em;
+   padding: 2px 4px;
    color: #660b45;
    background-color: rgb(167, 16, 147);
    box-shadow: 0px 0px 10px rgb(185, 16, 163);
@@ -88,7 +88,7 @@ body{
 
  header h2{
     font-family: "Rubik", sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
  }
 
  span.destaque{
