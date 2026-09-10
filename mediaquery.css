@@ -1,211 +1,194 @@
-@media screen and (min-width:1220px){
+@media screen and (min-width: 1220px) {
+/* Header */
+header {
+height: 7vh;
+} 
 
-    header{
-    height: 7vh;
- }
+nav .menu a {
+font-size: 1.1em;
+padding: 9px 15px;
+transition: all 0.3s ease; /* Adicionado para suavizar o efeito hover */
+} 
 
- nav#menu a{
-    
-    font-size: 1.2em;
-    padding: 9px 9px;
-    
- }
+nav .menu a:hover {
+font-size: 1.2em;
+padding: 9px 14px;
+color: #660b45;
+background-color: rgb(167, 16, 147);
+box-shadow: 0px 0px 10px rgb(185, 16, 163);
+border-radius: 50px;
+transform: translate(0px, 3px);
+} 
 
- header h2{
-    padding-left: 10px;
-    font-size: 1.9em;
- }
+header h2 {
+padding-left: 10px;
+font-size: 1.9em;
+} 
 
- header h3{
-    border-radius: 30px;
-    padding: 8px 15px;
-    font-size: 1.2em;
- }
+header h3 {
+border-radius: 30px;
+padding: 8px 15px;
+font-size: 1.2em;
+} 
 
-    #ficha{
-    height: 63vh;
-    justify-content: center;
-    align-content: center;
-    display: grid;
-    grid-template-columns: 500px 210px 430px;
-    grid-template-rows: 70px 95px 110px 110px  70px ;
-    font-size: 1.1em;
+/* Ficha */
+.ficha {
+height: 63vh;
+justify-content: center;
+align-content: center;
+display: grid;
+grid-template-columns: 500px 210px 430px;
+grid-template-rows: 70px 95px 110px 110px 70px;
+font-size: 1.1em;
+} 
 
- }
-    section#ficha img.foto {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-    width: 300px;
-    
-    
- }
+section .ficha img.foto {
+grid-column: 1 / 2;
+grid-row: 2 / 4;
+width: 300px;
+} 
 
-    #ficha h3 {
-    display: none;
-    align-items: end;
-    justify-items: end;
- }
+.ficha h3 {
+display: none;
+align-items: end;
+justify-items: end;
+} 
 
- #ficha h1 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    place-self: center center;
-    
- }
+.ficha h1 {
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+place-self: center center;
+} 
 
- #ficha h2 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    padding-top: 13px;
-    padding-left: 5px;
-   place-self: center start;
-    
- }
+.ficha h2 {
+grid-column: 3 / 4;
+grid-row: 2 / 3;
+padding-top: 13px;
+padding-left: 5px;
+place-self: center start;
+} 
 
-#p1 {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
- }
+.p1 {
+grid-column: 2 / 4;
+grid-row: 3 / 4;
+} 
 
- #p2{
-    grid-column: 2 / 4;
-    grid-row: 4 / 5;
- }
+.p2 {
+grid-column: 2 / 4;
+grid-row: 4 / 5;
+} 
 
- #social{
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-    place-self: end center;
- }
+.social {
+grid-column: 1 / 2;
+grid-row: 5 / 6;
+place-self: end center;
+} 
 
+.info {
+text-align: center;
+display: block;
+grid-column: 2 / 4;
+grid-row: 5 / 6;
+} 
 
+.work {
+padding: 8px 15px;
+margin-right: 25px;
+} 
 
- #info{
-   text-align: center;
-   display: block;
-   grid-column: 2 / 4;
-   grid-row: 5 / 6;
- }
+.location {
+padding: 8px 15px;
+margin-right: 25px;
+} 
 
- #work{
-   padding: 8px 15px;
-   margin-right: 25px;
-}
+/* Projetos */
+.projetos {
+max-width: 1600px;
+margin: 40px auto 0px auto;
+padding: 40px 0px 40px 15px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 20px 50px 100px auto auto;
+justify-items: center;
+} 
 
- #location{
-   padding: 8px 15px;
-   margin-right: 25px;
-   
-}
+.projetos img {
+grid-column: 2 / 3;
+grid-row: 1 / 1;
+} 
 
+.projetos h3 {
+grid-column: 1 / 2;
+grid-row: 2 / 3;
+} 
 
+.projetos a {
+place-self: center;
+width: 45%;
+text-align: center;
+grid-column: 1 / 2;
+grid-row: 2 / 1;
+} 
 
-    .projetos{
-      max-width: 1600px;
-      margin: auto;
-      margin-top: 40px;
-      padding: 40px 0px 40px 15px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 20px 50px 100px auto auto;
-      justify-items: center;
-     }
-      
-     .projetos img{
-      grid-column: 2 / 3;
-      grid-row: 1 / -1 ;
-     }
+.pg {
+display: block;
+grid-column: 1 / 2;
+grid-row: 3 / 2;
+place-items: center center;
+} 
 
-     .projetos h3{
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-     }
+.p.pq,
+details {
+display: none;
+} 
 
-     
+/* Projetos Alternado */
+.projetos-alternado img {
+grid-column: 1 / 2;
+grid-row: 1 / 1;
+} 
 
-     .projetos a {
-      place-self: center;
-      width: 45%;
-      text-align: center;
-      grid-column: 1 / 2;
-      grid-row: -2 / -1;
-      
-     }
+.projetos-alternado h3 {
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+} 
 
-     
-      p.g{
-      display: block;
-      grid-column: 1 / 2;
-      grid-row: 3 / -2;
-      place-items: center center;
-     }
+.projetos-alternado a {
+place-self: center;
+text-align: center;
+grid-column: 2 / 3;
+grid-row: 2 / 1;
+} 
 
-     p.pq{
-      display: none;
-     }
+.projetos-alternado .pg {
+display: block;
+grid-column: 2 / 3;
+grid-row: 3 / 2;
+padding-right: 15px;
+} 
 
-     details{
-      display: none;
+/* Skills */
+.skills {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 80px 70px auto auto;
+grid-auto-rows: 20px;
+place-items: center center;
+padding: 30px 0px;
+} 
 
-   
-}
+/* Formação */
+.formacao {
+padding: 50px 30px 60px 30px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 30px auto;
+grid-auto-rows: auto;
+gap: 20px;
+} 
 
- .projetos#alternado img{
-      grid-column: 1 / 2;
-      grid-row: 1 / -1 ;
-     }
-
- .projetos#alternado h3{
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-     }
-
-     
-
- .projetos#alternado a {
-      place-self: center;
-      text-align: center;
-      grid-column: 2 / 3;
-      grid-row: -2 / -1;
-      
-     }
-
- .projetos#alternado p.g{
-      display: block;
-      grid-column: 2 / 3;
-      grid-row: 3 / -2;
-      padding-right: 15px;
-     }
-
-     #skills{
-       display: grid;
-       grid-template-columns:  1fr 1fr 1fr ;
-       grid-template-rows: 80px 70px auto auto;
-       grid-auto-rows: 20px;
-       place-items: center center;
-     }
-
-
-      #skills{
-      padding: 30px 0px;
-}
-
-      #formacao{
-      padding: 50px 30px 60px 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 30px auto;
-      grid-auto-rows: auto;
-      gap: 20px;
-   }
-
-   #formacao h2{
-      grid-column: 1 / -1;
-      place-items: center center;
-   }
-
-   #formacao> div.cursos{
-      
+.formacao h2 {
+grid-column: 1 / 1;
+place-items: center center;
 }
 }
-    
