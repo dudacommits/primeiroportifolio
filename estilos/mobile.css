@@ -186,8 +186,8 @@ body{
 
  #ficha h3{
     font-size: 1em;
-    color: deeppink;
-    background-color: rgba(255, 20, 157, 0.144);
+    color: rgb(202, 18, 116);
+    background-color: rgba(230, 8, 138, 0.24);
     border-radius: 20px;
     padding: 4px 10px;
     display: inline-block;
